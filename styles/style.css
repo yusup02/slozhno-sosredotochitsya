@@ -1,5 +1,395 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  --inner-color: #f1b2ce;
+  --border-color: #ff0070;
+  --text-color: #000;
+  --title-color: #db00ff;
+}
+
+.container {
+  width: 984px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+}
+
+.header_inner_rec_title {
+  width: 25px;
+  height: 25px;
+}
+
+.header_inner_rec {
+  margin-left: 306px;
+  top: 20px;
+}
+
+.header_inner_rec_text {
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.header_inner_rec_title_o {
+  width: 9px;
+  height: 9px;
+  border-radius: 180px;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: 26px;
+  padding: 0px 13px;
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid #ff0070;
+}
+
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.header_title {
+  width: 759px;
+  height: 130px;
+  margin-top: 274px;
+}
+
+.header_inner {
+  width: 491px;
+  position: absolute;
+  margin-top: 114px;
+  right: 20px;
+}
+
+.header_text {
+  color: #000028;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.header_u {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.header__theme-menu {
+  padding-top: 20px;
+}
+
+.header__theme-menu-list {
+  gap: 10px;
+}
+
+.header {
+  position: relative;
+  height: 768px;
+}
+
+.header_inner_rec {
+  display: flex;
+  position: absolute;
+  right: 20px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+/* section */
+
+.section {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.section-inner {
+  width: 649px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section_inner_title_2 {
+  width: 315px;
+}
+
+.section_inner_title_text_1 {
+  color: #000028;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  background-color: #ff0070;
+}
+
+.section_inner_title_text {
+  margin-top: 10px;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+}
+
+.section-inner_2 {
+  display: flex;
+  flex-direction: row !important;
+  width: 100% !important;
+  padding-top: 20px;
+}
+
+/* title */
+
+.title {
+  color: #ff0070;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  width: 315px;
+}
+
+/* gallery */
+.gallery {
+  margin-top: 79px;
+}
+
+.gallery_inner {
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "d c b"
+    "d e e";
+  gap: 20px;
+}
+
+.gallery_item_1 {
+  grid-area: a;
+  width: 649px;
+  height: 260px;
+}
+
+.gallery_item_2 {
+  width: 315px;
+  height: 595px;
+  grid-area: b;
+}
+
+.gallery_item_2 img {
+  height: 595px;
+}
+
+.gallery_item_3 img {
+  height: 768px;
+}
+
+.gallery_item_3 {
+  grid-area: d;
+  width: 315px;
+  height: 768px;
+}
+
+.gallery_item_4 {
+  grid-area: c;
+  width: 315px;
+  height: 315px;
+}
+
+.gallery_item_5 {
+  grid-area: e;
+  width: 649px;
+}
+
+img {
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 768px;
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer_rec {
+  position: absolute;
+  right: 20px;
+}
+
+.footer-text {
+  padding-top: 319px;
+  text-shadow: 2px 2px 0px #ff0070;
+  font-family: IBM Plex Mono;
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 129.525px */
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Стили темной темы */
+
+  .page {
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    background-image: url(../images/cover-image-dark.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+   .header__theme-menu-button {
+    color: #ff0070;
+  }
+  
+   .section_inner_title_text {
+    color: #f1b2ce;
+  }
+  
+   .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #ff0070;
+  }
+  
+   .header__theme-menu-button:hover {
+    border: 1px solid #ff0070;
+  }
+  
+   .header__theme-menu-button_active {
+    border: 1px solid #ff0070;
+  }
+
+  .theme_dark .header_inner_rec_title {
+    border-top: 1px solid #ff0070 ;
+    border-right: 1px solid #ff0070;
+  }
+  
+   .header_inner_rec_title_o {
+    display: block;
+    background-color: #ff0070;
+  }
+  
+   .header_focus {
+    color: #db00ff;
+    text-shadow: 4px 4px 0px #ff0070;
+  }
+  
+   .header_inner {
+    background-color: #ff0070;
+  }
+  
+   .header_u {
+    border-bottom: 1px solid #ff0070;
+    border-left: 1px solid #ff0070;
+  }
+  
+   .header_inner_rec_text {
+    display: block;
+    color: #ff0070;
+  }
+  
+   .footer-text {
+    color: #db00ff;
+    text-shadow: 4px 4px 0px #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Стили светлой темы */
+  .page {
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+    background-image: url(../images/cover-image-light.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+ .header_inner_rec_title {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  
+  .header_u {
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+  
+   .header_inner_rec_text,
+   .header_inner_rec_title_o {
+    display: none;
+  }
+  .header__theme-menu-button:focus {
+    outline: none;
+  }
+  
+ .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid #000;
+  }
+  
+ .header__theme-menu-button:hover {
+    border: 1px solid #000;
+  }
+  
+ .header__theme-menu-button_active {
+    border: 1px solid #000;
+  }
+  
+ .header__theme-menu-button {
+    color: #000;
+  }
+  
+ .header_focus,
+ .footer-text {
+    color: #ffc2e6;
+    text-shadow: 4px 4px 0px #ff8dcb;
+  }
+  
+ .header_inner {
+    background-color: #ffc2e6;
+  }
 }
