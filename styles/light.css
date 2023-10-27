@@ -65,3 +65,7 @@
 .theme_light .header_inner {
   background-color: #ffc2e6;
 }
+
+.theme_light .section_inner_title_text {
+  color: #000;
+}

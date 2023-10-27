@@ -1,4 +1,5 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 
 *,
 *::before,
@@ -56,6 +57,10 @@ a {
   line-height: 82.5%; /* 129.525px */
 }
 
+.transfer_1 {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .header__theme-menu {
     padding-top: 0;
@@ -73,14 +78,19 @@ a {
   }
 
   .header__theme-menu-list {
-    margin-top: 147px;
+    margin-top: 172px;
     display: flex;
     flex-direction: column;
   }
 
-  .header_title {
+  header .header_title {
     margin-top: 114px;
     padding: 0;
+    margin-top: 176px;
+  }
+
+  header .header_focus {
+    font-size: 120px;
   }
 
   body > .container {
@@ -89,11 +99,14 @@ a {
 
   header > .header_inner {
     width: 364px;
-    margin-top: 162px;
+    margin-top: 129px;
+  }
+  .section_inner_title_2 {
+    width: 100% !important;
   }
 
-  .section-inner {
-    flex-wrap: wrap;
+  div.section-inner_2 {
+    flex-direction: column;
   }
 
   .gallery_inner > .gallery_item_1 {
@@ -132,9 +145,33 @@ a {
   .gallery_inner img {
     width: 100%;
   }
+
+  footer .footer-text {
+    padding-top: 465px;
+    font-size: 120px;
+  }
 }
 
 @media screen and (max-width: 375px) {
+
+.container {
+  margin-top: 31px !important;
+  width: 355px !important;
+}
+
+  header .header_inner_rec {
+    top: 10px;
+    right: 10px;
+  }
+
+  header div .header_focus {
+    font-size: 116px;
+}
+
+body header .header_inner {
+  margin-top: 116px;
+}
+
   .header_title {
     width: 355px !important;
     margin-top: 66px !important;
@@ -159,6 +196,14 @@ a {
     margin-top: 50px;
   }
 
+  section .title {
+    width: 100%;
+  }
+
+  .section_2 {
+    padding-top: 49px;
+  }
+
   .gallery_inner {
     display: flex !important;
     flex-direction: column;
@@ -181,19 +226,28 @@ a {
 
   .gallery_item_3 > img,
   .gallery_item_5 > img {
-    height: 237px !important;
+    height: 232px !important;
+  }
+  
+  .gallery_inner {
+    margin-top: 9px !important;
   }
 
-  .container {
-    width: 355px !important;
+  .section {
+    margin-top: 0 !important;
   }
 
   .section-inner {
     width: 100% !important;
   }
 
+  header .header__theme-menu {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+
   .header__theme-menu-list {
-    margin-top: 76px;
+    margin-top: 75px
   }
 
   header .header_u {
@@ -202,15 +256,26 @@ a {
   }
 
   body .footer {
-    margin-top: 40px;
+    margin-top: 20px;
     height: 100vh !important;
   }
 
   .footer_rec {
-    top: 10px !important;
+    top: 20px !important;
+    right: 10px !important;
   }
 
   footer > .header_u {
-    bottom: 10px;
+    bottom: 11px;
+    left: 10px;
+  }
+
+  .footer .footer-text {
+    padding-top: 300px !important;
+    font-size: 113px !important;
+}
+
+  .transfer {
+    display: none;
   }
 }
