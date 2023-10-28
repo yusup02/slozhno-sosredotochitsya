@@ -244,10 +244,10 @@ img {
 
 .footer {
   width: 100%;
-  height: 768px;
+  height: 100vh;
   position: relative;
-  margin-top: 60px;
   text-align: center;
+  margin-top: 57px;
 }
 
 .footer_rec {

@@ -9,6 +9,7 @@
   --border-color: #ff0070;
   --text-color: #000;
   --title-color: #db00ff;
+  --nex-color: #ff8dcb;
 }
 
 .page.theme_light {
@@ -56,14 +57,20 @@
   color: #000;
 }
 
+.theme_light .title {
+  color: #353430;
+  font-weight: 700;
+}
+
 .theme_light .header_focus,
-.theme_light .footer-text{
+.theme_light .footer-text {
   color: #ffc2e6;
   text-shadow: 4px 4px 0px #ff8dcb;
 }
 
-.theme_light .header_inner {
-  background-color: #ffc2e6;
+.theme_light .header_inner,
+.theme_light .section_inner_title_text_1 {
+  background-color: #ff8dcb;
 }
 
 .theme_light .section_inner_title_text {

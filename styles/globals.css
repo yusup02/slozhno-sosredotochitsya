@@ -1,5 +1,6 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
 
 *,
 *::before,
@@ -55,6 +56,10 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
+}
+
+.transfer {
+  display: none;
 }
 
 .transfer_1 {
@@ -150,12 +155,16 @@ a {
     padding-top: 465px;
     font-size: 120px;
   }
+
+  .transfer {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 375px) {
 
 .container {
-  margin-top: 31px !important;
+  margin-top: 35px !important;
   width: 355px !important;
 }
 
