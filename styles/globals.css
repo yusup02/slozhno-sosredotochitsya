@@ -239,11 +239,20 @@ body header .header_inner {
 
   .section {
     margin-top: 0 !important;
+    gap: 16px !important;
   }
 
   .section-inner {
-    margin-top: 9px !important;
+    margin-top: 9px;
     width: 100% !important;
+  }
+
+  .section-inner_2 {
+    padding-top: 11px !important;
+  }
+
+  .section-inner_3 {
+    margin-top: 5px !important;
   }
 
   header .header__theme-menu {
@@ -261,7 +270,7 @@ body header .header_inner {
   }
 
   body .footer {
-    margin-top: 35px !important;
+    margin-top: 19px !important;
     height: 100vh !important;
   }
 
