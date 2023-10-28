@@ -31,6 +31,14 @@
   color: #f1b2ce;
 }
 
+.theme_dark  .section_inner_title_text_1 {
+  background-color: #ff0070;
+}
+
+.theme_dark .title {
+  color: #FF0070;
+}
+
 .theme_dark .header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px solid #ff0070;

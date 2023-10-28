@@ -265,8 +265,11 @@ img {
 @media (prefers-color-scheme: dark) {
   /* Стили темной темы */
 
-  .page {
-    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  .page.theme_dark {
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
     background-image: url(../images/cover-image-dark.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -274,24 +277,32 @@ img {
     background-color: #000028;
   }
 
-  .header__theme-menu-button {
+  .theme_dark .header__theme-menu-button {
     color: #ff0070;
   }
 
-  .section_inner_title_text {
+  .theme_dark .section_inner_title_text {
     color: #f1b2ce;
   }
 
-  .header__theme-menu-button:focus-visible {
+  .theme_dark .section_inner_title_text_1 {
+    background-color: #ff0070;
+  }
+
+  .theme_dark .title {
+    color: #ff0070;
+  }
+
+  .theme_dark .header__theme-menu-button:focus-visible {
     outline: none;
     border-bottom: 1px solid #ff0070;
   }
 
-  .header__theme-menu-button:hover {
+  .theme_dark .header__theme-menu-button:hover {
     border: 1px solid #ff0070;
   }
 
-  .header__theme-menu-button_active {
+  .theme_dark .header__theme-menu-button_active {
     border: 1px solid #ff0070;
   }
 
@@ -300,33 +311,41 @@ img {
     border-right: 1px solid #ff0070;
   }
 
-  .header_inner_rec_title_o {
+  .theme_dark .header_inner_rec_title_o {
     display: block;
     background-color: #ff0070;
   }
 
   .header_focus {
+    font-family: IBM Plex Mono;
+    font-size: 157px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82.5%; /* 129.525px */
+  }
+
+  .theme_dark .header_focus {
     color: #db00ff;
     text-shadow: 4px 4px 0px #ff0070;
   }
 
-  .header_inner {
+  .theme_dark .header_inner {
     background-color: #ff0070;
   }
 
-  .header_u {
+  .theme_dark .header_u {
     border-bottom: 1px solid #ff0070;
     border-left: 1px solid #ff0070;
   }
 
-  .header_inner_rec_text {
+  .theme_dark .header_inner_rec_text {
     display: block;
     color: #ff0070;
   }
 
-  .footer-text {
+  .theme_dark .footer-text {
     color: #db00ff;
-    text-shadow: 4px 4px 0px #ff0070;
+    text-shadow: 2px 2px 0px #ff0070;
   }
 }
 
@@ -336,15 +355,6 @@ img {
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-  :root.theme_light {
-    --inner-color: #f1b2ce;
-    --border-color: #ff0070;
-    --text-color: #000;
-    --title-color: #db00ff;
-    --nex-color: #ff8dcb;
-  }
-
   .theme_light {
     /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
