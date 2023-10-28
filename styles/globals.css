@@ -261,7 +261,7 @@ body header .header_inner {
   }
 
   body .footer {
-    margin-top: 35px;
+    margin-top: 35px !important;
     height: 100vh !important;
   }
 
