@@ -16,6 +16,8 @@
 
 .header {
   width: 100%;
+  position: relative;
+  height: 768px;
 }
 
 .header_inner_rec_title {
@@ -26,6 +28,9 @@
 .header_inner_rec {
   margin-left: 306px;
   top: 20px;
+  display: flex;
+  position: absolute;
+  right: 20px;
 }
 
 .header_inner_rec_text {
@@ -64,11 +69,13 @@
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .header__theme-menu {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .header_title {
@@ -99,25 +106,6 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-}
-
-.header__theme-menu {
-  padding-top: 20px;
-}
-
-.header__theme-menu-list {
-  gap: 10px;
-}
-
-.header {
-  position: relative;
-  height: 768px;
-}
-
-.header_inner_rec {
-  display: flex;
-  position: absolute;
-  right: 20px;
 }
 
 .header__theme-menu-button:focus {

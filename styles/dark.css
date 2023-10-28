@@ -44,7 +44,7 @@
 }
 
 .theme_dark .header_inner_rec_title {
-  border-top: 1px solid #ff0070 ;
+  border-top: 1px solid #ff0070;
   border-right: 1px solid #ff0070;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .theme_dark .header_u {
-  border-bottom: 1px solid #ff0070 ;
+  border-bottom: 1px solid #ff0070;
   border-left: 1px solid #ff0070;
 }
 
@@ -82,5 +82,10 @@
 
 .theme_dark .footer-text {
   color: #db00ff;
-  text-shadow: 4px 4px 0px #FF0070;
+  text-shadow: 4px 4px 0px #ff0070;
+}
+
+.theme_dark .footer-text {
+  color: #db00ff;
+  text-shadow: 2px 2px 0px #ff0070;
 }
