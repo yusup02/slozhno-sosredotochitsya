@@ -2,3 +2,19 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root.theme_dark {
+  --inner-color: #f1b2ce;
+  --border-color: #ff0070;
+  --text-color: #000;
+  --title-color: #db00ff;
+}
+
+:root.theme_light {
+  --inner-color: #f1b2ce;
+  --border-color: #ff0070;
+  --text-color: #000;
+  --dark-color: #353430;
+  --title-color: #db00ff;
+  --nex-color: #ff8dcb;
+}
