@@ -19,14 +19,6 @@
   margin-top: 80px;
 }
 
-.transfer {
-  display: none;
-}
-
-.transfer_1 {
-  display: none;
-}
-
 /* header */
 
 .header {
@@ -466,7 +458,12 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-  p .new-line::before {
+.new-line::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .new-line_2::before {
     content: "\A";
     white-space: pre;
   }
@@ -581,16 +578,21 @@ img {
     font-size: 120px;
   }
 
-  .transfer {
-    display: block;
-  }
-
   .title {
     width: 318px;
   }
 
   .title_2 {
     width: 256px;
+  }
+
+  .new-line::before {
+    white-space: normal;
+  }
+
+  .new-lin_mobaile::before {
+    content: "\A";
+    white-space: pre;
   }
 }
 
@@ -735,7 +737,9 @@ img {
     padding-top: 288px;
   }
 
-  .transfer {
-    display: none;
-  }
+  .new-lin_mobaile::before {
+    content: "\A";
+    white-space: normal;
+}
+
 }
