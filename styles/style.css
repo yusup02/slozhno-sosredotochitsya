@@ -30,7 +30,6 @@
 /* header */
 
 .header {
-  width: 100%;
   position: relative;
   max-height: 100vh;
   min-height: 668px;
@@ -279,7 +278,6 @@ img {
 /* footer */
 
 .footer {
-  width: 100%;
   position: relative;
   text-align: center;
   margin-top: 60px;
@@ -753,4 +751,5 @@ img {
   .transfer {
     display: none;
   }
+
 }
