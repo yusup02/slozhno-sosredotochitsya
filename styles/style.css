@@ -10,7 +10,7 @@
 .container {
   width: 984px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .g {
@@ -124,10 +124,11 @@
 }
 
 .header_u {
+  position: absolute;
   width: 25px;
   height: 25px;
-  margin-top: 274px;
-  margin-left: 20px;
+  bottom: 20px;
+  left: 20px;
 }
 
 .header__theme-menu-button:focus {
@@ -524,10 +525,6 @@ img {
     margin-top: 162px;
   }
 
-  .header_u {
-    margin-top: 417px;
-  }
-
   .section {
     gap: 50px;
   }
@@ -599,12 +596,13 @@ img {
 
 @media screen and (max-width: 375px) {
   .container {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 355px;
   }
 
   .header {
     margin-top: 10px;
+    position: static;
   }
 
   .header_inner_rec {
@@ -628,18 +626,14 @@ img {
 
   .header_inner {
     margin-top: 56px;
-    margin-left: 10px;
+    right: 10px;
+    width: 355px;
   }
 
   .header_title {
     width: 355px;
     margin-top: 66px;
     margin-left: 10px;
-  }
-
-  .header_inner {
-    width: 355px;
-    position: static;
   }
 
   body .section {
@@ -724,26 +718,21 @@ img {
   }
 
   .header__theme-menu-list {
-    margin-top: 75px;
+    margin-top: 65px;
   }
 
   .header_u {
-    margin-top: 31px;
-    margin-left: 10px;
-  }
-
-  .footer_u {
-    margin-left: 10px;
-    margin-top: 238px;
+    bottom:10px;
+    left: 10px;
   }
 
   .footer {
-    margin-top: 31px;
+    margin-top: 40px;
   }
 
   .footer-text {
     font-size: 116px;
-    padding-top: 298px;
+    padding-top: 288px;
   }
 
   .transfer {
