@@ -31,8 +31,7 @@
 
 .header {
   position: relative;
-  max-height: 100vh;
-  min-height: 668px;
+  height: 100vh;
 }
 
 .header_focus {
@@ -281,8 +280,7 @@ img {
   position: relative;
   text-align: center;
   margin-top: 60px;
-  max-height: 100vh;
-  min-height: 668px;
+  height: 100vh;
 }
 
 .footer_rec {
@@ -475,7 +473,7 @@ img {
   .title {
     width: 478px;
   }
-  
+
   .title_2 {
     width: 315px;
   }
@@ -751,5 +749,4 @@ img {
   .transfer {
     display: none;
   }
-
 }
