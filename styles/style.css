@@ -32,6 +32,8 @@
 .header {
   width: 100%;
   position: relative;
+  max-height: 100vh;
+  min-height: 668px;
 }
 
 .header_focus {
@@ -93,16 +95,13 @@
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .header__theme-menu {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-}
-
-.header__theme-menu-button {
-  margin-left: 10px;
 }
 
 .header_title {
@@ -284,6 +283,8 @@ img {
   position: relative;
   text-align: center;
   margin-top: 60px;
+  max-height: 100vh;
+  min-height: 668px;
 }
 
 .footer_rec {
@@ -370,9 +371,6 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%; /* 129.525px */
-  }
-
-  .header_focus {
     color: #db00ff;
     text-shadow: 4px 4px 0px #ff0070;
   }
@@ -474,6 +472,18 @@ img {
   p .new-line::before {
     content: "\A";
     white-space: pre;
+  }
+
+  .title {
+    width: 478px;
+  }
+  
+  .title_2 {
+    width: 315px;
+  }
+
+  .section-inner_2 {
+    padding-top: 21px;
   }
 }
 
@@ -593,8 +603,12 @@ img {
 
 @media screen and (max-width: 375px) {
   .container {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 355px;
+  }
+
+  .header {
+    margin-top: 10px;
   }
 
   .header_inner_rec {
@@ -618,14 +632,12 @@ img {
 
   .header_inner {
     margin-top: 56px;
+    margin-left: 10px;
   }
 
   .header_title {
     width: 355px;
     margin-top: 66px;
-  }
-  .header_title,
-  .header_inner {
     margin-left: 10px;
   }
 
@@ -650,6 +662,7 @@ img {
 
   .section_2 {
     padding-top: 49px;
+    display: block;
   }
 
   .gallery_inner {
@@ -681,10 +694,6 @@ img {
   .section {
     margin-top: 0;
     gap: 11px;
-  }
-
-  .section_2 {
-    display: block;
   }
 
   .section-inner {
@@ -728,24 +737,17 @@ img {
   }
 
   .footer_u {
-    margin-left: 0px;
-    margin-top: 248px;
+    margin-left: 10px;
+    margin-top: 238px;
   }
 
   .footer {
-    margin-top: 19px;
-    margin-top: 40px;
-    margin-left: 10px;
-  }
-
-  .footer_rec {
-    margin-right: 9px;
+    margin-top: 31px;
   }
 
   .footer-text {
-    font-size: 113px;
-    padding-top: 288px;
-    margin-right: 17px;
+    font-size: 116px;
+    padding-top: 298px;
   }
 
   .transfer {
