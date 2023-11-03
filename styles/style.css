@@ -429,7 +429,7 @@ img {
 
 @media screen and (max-width: 375px) {
   .container {
-    margin-top: 0;
+    margin-top: 40px;
     width: 355px;
   }
 
@@ -472,7 +472,7 @@ img {
     flex-direction: column;
     margin-top: 0;
     gap: 11px;
-    margin-top: 40px;
+   
   }
 
   .gallery,
@@ -485,7 +485,7 @@ img {
   }
 
   .section_2 {
-    padding-top: 10px;
+    padding-top: 50px;
     display: block;
   }
 
