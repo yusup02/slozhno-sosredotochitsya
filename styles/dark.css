@@ -17,7 +17,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
-  background-color: #000;
+  background-color: #000028;
 }
 
 
@@ -31,9 +31,8 @@
       чем стили в медиазапросе предпочтений пользователя
     */
     background-image: url(../images/cover-image-dark.png);
-    background-color: #000;
+    background-color: #000028;
   }
-  
   .header__theme-menu-button {
     color: #ff0070;
   }
