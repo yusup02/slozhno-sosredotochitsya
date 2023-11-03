@@ -1,12 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --inner-color: #f1b2ce;
-  --border-color: #ff0070;
-  --text-color: #000;
-  --background-color: #000028;
-  --title-color: #db00ff;
-}
-
 .container {
   width: 984px;
   margin: 0 auto;
@@ -23,7 +15,7 @@
 
 .header {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header_focus {
@@ -96,7 +88,7 @@
 
 .header_title {
   width: 759px;
-  margin-top: 274px;
+  margin-top: 50%;
 }
 
 .header_inner {
@@ -273,7 +265,7 @@ img {
   position: relative;
   text-align: center;
   margin-top: 60px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .footer_rec {
@@ -295,170 +287,14 @@ img {
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-size: auto 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: dark) {
-  /* Стили темной темы */
-
-  .page {
-    /* сохраните этот селектор в приведённом виде.
-      Так стили написанные ниже будут иметь больший вес,
-      чем стили в медиазапросе предпочтений пользователя
-    */
-    background-image: url(../images/cover-image-dark.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000028;
-  }
-
-  .header__theme-menu-button {
-    color: #ff0070;
-  }
-
-  .section_inner_title_text {
-    color: #f1b2ce;
-  }
-
-  .section_inner_title_text_1 {
-    background-color: #ff0070;
-  }
-
-  .title {
-    color: #ff0070;
-  }
-
-  .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-bottom: 1px solid #ff0070;
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid #ff0070;
-  }
-
-  .header__theme-menu-button_active {
-    outline: 1px solid #ff0070;
-  }
-
-  .header_inner_rec_title {
-    border-top: 1px solid #ff0070;
-    border-right: 1px solid #ff0070;
-  }
-
-  .header_inner_rec_title_o {
-    display: block;
-    background-color: #ff0070;
-  }
-
-  .header_focus {
-    font-family: IBM Plex Mono, Arial, sans serif;
-    font-size: 157px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 82.5%; /* 129.525px */
-    color: #db00ff;
-    text-shadow: 4px 4px 0px #ff0070;
-  }
-
-  .header_inner {
-    background-color: #ff0070;
-  }
-
-  .header_u {
-    border-bottom: 1px solid #ff0070;
-    border-left: 1px solid #ff0070;
-  }
-
-  .header_inner_rec_text {
-    display: block;
-    color: #ff0070;
-  }
-
-  .footer-text {
-    color: #db00ff;
-    text-shadow: 2px 2px 0px #ff0070;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  /*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-  .theme_light {
-    /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-    background-image: url(../images/cover-image-light.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  .header_inner_rec_title {
-    border-top: 1px solid #353430;
-    border-right: 1px solid #353430;
-  }
-
-  .header_u {
-    border-bottom: 1px solid #353430;
-    border-left: 1px solid #353430;
-  }
-
-  .header_inner_rec_text,
-  .header_inner_rec_title_o {
-    display: none;
-  }
-  .header__theme-menu-button:focus {
-    outline: none;
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid #353430;
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid #353430;
-  }
-
-  .header__theme-menu-button_active {
-    outline: 1px solid #353430;
-  }
-
-  .header__theme-menu-button {
-    color: #353430;
-  }
-
-  .title {
-    color: #353430;
-    font-weight: 700;
-  }
-
-  .header_focus,
-  .footer-text {
-    color: #ffc2e6;
-    text-shadow: 4px 4px 0px #ff8dcb;
-  }
-
-  .header_inner,
-  .section_inner_title_text_1 {
-    background-color: #ff8dcb;
-  }
-
-  .section_inner_title_text {
-    color: #000;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-.new-line::before {
+  .new-line::before {
     content: "\A";
     white-space: pre;
   }
@@ -569,10 +405,6 @@ img {
     width: 479px;
   }
 
-  .gallery_inner img {
-    width: 100%;
-  }
-
   .footer-text {
     padding-top: 465px;
     font-size: 120px;
@@ -638,7 +470,7 @@ img {
     margin-left: 10px;
   }
 
-  body .section {
+  .section {
     flex-direction: column;
   }
 
@@ -724,7 +556,7 @@ img {
   }
 
   .header_u {
-    bottom:10px;
+    bottom: 10px;
     left: 10px;
   }
 
@@ -740,6 +572,5 @@ img {
   .new-lin_mobaile::before {
     content: "\A";
     white-space: normal;
-}
-
+  }
 }
