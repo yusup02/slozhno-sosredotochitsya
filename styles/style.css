@@ -472,6 +472,8 @@ img {
 
   .section {
     flex-direction: column;
+    margin-top: 0;
+    gap: 11px;
   }
 
   .gallery,
@@ -513,11 +515,6 @@ img {
   .gallery_item_3 > img,
   .gallery_item_5 > img {
     height: 232px;
-  }
-
-  .section {
-    margin-top: 0;
-    gap: 11px;
   }
 
   .section-inner {
