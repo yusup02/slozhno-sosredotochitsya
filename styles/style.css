@@ -288,7 +288,6 @@ img {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-size: auto 100%;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -430,12 +429,11 @@ img {
 
 @media screen and (max-width: 375px) {
   .container {
-    margin-top: 30px;
+    margin-top: 0;
     width: 355px;
   }
 
   .header {
-    margin-top: 10px;
     position: static;
   }
 
@@ -477,9 +475,12 @@ img {
   }
 
   .gallery,
-  .section,
   .section_1 {
     margin-top: 50px;
+  }
+
+  .section {
+    margin-top: 40px;
   }
 
   .title {
@@ -487,7 +488,7 @@ img {
   }
 
   .section_2 {
-    padding-top: 49px;
+    padding-top: 10px;
     display: block;
   }
 
@@ -544,7 +545,7 @@ img {
   }
 
   .header__theme-menu {
-    padding-top: 0;
+    padding-top: 10px;
     padding-right: 10px;
   }
 
