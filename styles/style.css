@@ -24,6 +24,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
+  width: 759px;
+  margin-top: 25%;
 }
 
 .header_inner_rec_title {
@@ -86,11 +88,6 @@
   padding-top: 20px;
 }
 
-.header_title {
-  width: 759px;
-  margin-top: 50%;
-}
-
 .header_inner {
   width: 491px;
   position: absolute;
@@ -128,6 +125,8 @@
 }
 
 .section_2 {
+  display: flex;
+  gap: 20px;
   margin-top: 81px;
   display: grid;
   grid-template-areas:
@@ -156,7 +155,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  background-color: #ff0070;
+  background-color:  var(--border-color);
 }
 
 .section_inner_title_text {
@@ -173,15 +172,27 @@
   flex-direction: row;
   width: 100% !important;
   padding-top: 20px;
+  gap: 20px;
 }
 
 .section-inner_3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   grid-area: b;
   gap: 0;
 }
 
 .section_inner_title_1 {
   margin-top: 19px;
+  color: #000028;
+  font-family: IBM Plex Mono, Arial, sans serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  background-color:  var(--border-color);
 }
 
 .section-inner_4 {
@@ -203,7 +214,18 @@
 /* title */
 
 .title {
-  color: #ff0070;
+  color:  var(--border-color);
+  font-family: IBM Plex Mono, Arial, sans serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  width: 315px;
+  grid-area: a;
+}
+
+.title_2 {
+  color:  var(--border-color);
   font-family: IBM Plex Mono, Arial, sans serif;
   font-size: 18px;
   font-style: normal;
@@ -228,35 +250,39 @@
   gap: 20px;
 }
 
-.gallery_item {
+.gallery_item_1 {
   height: 100%;
   width: 100%;
-}
-
-.gallery_item_1 {
   grid-area: a;
+  object-fit: cover;
 }
 
 .gallery_item_2 {
+  height: 100%;
+  width: 100%;
   grid-area: b;
+  object-fit: cover;
 }
 
 .gallery_item_3 {
+  height: 100%;
+  width: 100%;
   grid-area: d;
+  object-fit: cover;
 }
 
 .gallery_item_4 {
   grid-area: c;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .gallery_item_5 {
-  grid-area: e;
-}
-
-img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
+  grid-area: e;
 }
 
 /* footer */
@@ -271,17 +297,30 @@ img {
 .footer_rec {
   position: absolute;
   right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
   top: 17px;
 }
 
 .footer-text {
   padding-top: 319px;
-  text-shadow: 2px 2px 0px #ff0070;
+  text-shadow: 2px 2px 0px  var(--border-color);
   font-family: IBM Plex Mono, Arial, sans serif;
   font-size: 157px;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
+}
+
+.footer_u {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 20px;
+  left: 20px;
 }
 
 .page {
@@ -293,6 +332,11 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
+
+  .header_focus {
+    margin-top: 274px;
+  }
+
   .new-line::before {
     content: "\A";
     white-space: pre;
@@ -345,6 +389,7 @@ img {
   }
 
   .header_focus {
+    margin-top: 174px;
     font-size: 120px;
   }
 
@@ -362,7 +407,7 @@ img {
   }
 
   .section_2 {
-    gap: 0;
+    gap: 20px;
   }
 
   .section_inner_title_2 {
@@ -373,12 +418,6 @@ img {
     flex-direction: column;
   }
 
-  .section-inner_4,
-  .section-inner_5,
-  .section-inner_6,
-  .section-inner_7 {
-    margin-top: 20px;
-  }
 
   .gallery_item_1 {
     width: 479px;
@@ -414,7 +453,7 @@ img {
   }
 
   .title_2 {
-    width: 256px;
+    width: 236px;
   }
 
   .new-line::before {
@@ -454,6 +493,9 @@ img {
 
   .header_focus {
     font-size: 116px;
+    width: 355px;
+    margin: 0 auto;
+    margin-top: 66px
   }
 
   .header_inner {
@@ -484,8 +526,12 @@ img {
     width: 100%;
   }
 
+  .title_2 {
+    width: 346px;
+}
+
   .section_2 {
-    padding-top: 50px;
+    margin-top: 50px;
     display: block;
   }
 
@@ -501,18 +547,13 @@ img {
     height: auto;
   }
 
-  .gallery_item_1 > img {
-    height: 142px;
-  }
-
-  .gallery_item_2 > img,
-  .gallery_item_4 > img {
-    height: 355px;
-  }
-
-  .gallery_item_3 > img,
-  .gallery_item_5 > img {
-    height: 232px;
+  .gallery_item_1,
+  .gallery_item_2,
+  .gallery_item_3,
+  .gallery_item_4,
+  .gallery_item_5 {
+    width: 100%;
+    height: auto;
   }
 
   .section-inner {
@@ -521,7 +562,7 @@ img {
   }
 
   .section-inner_2 {
-    padding-top: 11px;
+    padding-top: 20px;
   }
 
   .section-inner_3 {

@@ -4,15 +4,6 @@
   переключая тему
 */
 
-:root.theme_light {
-  --inner-color: #f1b2ce;
-  --border-color: #ff0070;
-  --text-color: #000;
-  --dark-color: #353430;
-  --title-color: #db00ff;
-  --nex-color: #ff8dcb;
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -22,13 +13,13 @@
 }
 
 .theme_light .header_inner_rec_title {
-  border-top: 1px solid #353430;
-  border-right: 1px solid #353430;
+  border-top: 1px solid var(--dark-color);
+  border-right: 1px solid var(--dark-color);
 }
 
 .theme_light .header_u {
-  border-bottom: 1px solid #353430;
-  border-left: 1px solid #353430;
+  border-bottom: 1px solid var(--dark-color);
+  border-left: 1px solid var(--dark-color);
 }
 
 .header_inner_rec_text,
@@ -40,39 +31,58 @@
 }
 
 .theme_light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid #353430;
+  border-bottom: 1px solid var(--dark-color);
 }
 
 .theme_light .header__theme-menu-button:hover {
-  outline: 1px solid #353430;
+  outline: 1px solid #000;
 }
 
 .theme_light .header__theme-menu-button_active {
-  outline: 1px solid #353430;
+  outline: 1px solid var(--dark-color);
+  border: none;
 }
 
 .theme_light .header__theme-menu-button {
-  color: #353430;
+  color: var(--dark-color);
 }
 
 .theme_light .title {
-  color: #353430;
+  color: var(--dark-color);
   font-weight: 700;
 }
 
 .theme_light .header_focus,
 .theme_light .footer-text {
-  color: #ffc2e6;
-  text-shadow: 4px 4px 0px #ff8dcb;
+  color: var(--light-color);
+  text-shadow: 4px 4px 0px var(--nex-color);
 }
 
 .theme_light .header_inner,
 .theme_light .section_inner_title_text_1 {
-  background-color: #ff8dcb;
+  background-color: var(--nex-color);
 }
 
 .theme_light .section_inner_title_text {
-  color: #000;
+  color: var(--text-color);
+}
+
+.theme_light .section_inner_title_1 {
+  background-color: var(--nex-color);
+}
+
+.theme_light .footer_rec {
+  border-top: 1px solid var(--dark-color);
+  border-right: 1px solid var(--dark-color);
+}
+
+.theme_light .footer_u {
+  border-bottom: 1px solid var(--dark-color);
+  border-left: 1px solid var(--dark-color);
+}
+
+.theme_light .title_2 {
+  color: var(--dark-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -89,14 +99,18 @@
     background-image: url(../images/cover-image-light.png);
   }
 
+  .section_inner_title_1 {
+    background-color: var(--nex-color);
+  }
+
   .header_inner_rec_title {
-    border-top: 1px solid #353430;
-    border-right: 1px solid #353430;
+    border-top: 1px solid var(--dark-color);
+    border-right: 1px solid var(--dark-color);
   }
 
   .header_u {
-    border-bottom: 1px solid #353430;
-    border-left: 1px solid #353430;
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
   }
 
   .header_inner_rec_text,
@@ -108,38 +122,48 @@
   }
 
   .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid #353430;
+    border-bottom: 1px solid var(--dark-color);
   }
 
   .header__theme-menu-button:hover {
-    outline: 1px solid #353430;
+    outline: 1px solid var(--dark-color);
   }
 
   .header__theme-menu-button_active {
-    outline: 1px solid #353430;
+    outline: 1px solid var(--dark-color);
   }
 
   .header__theme-menu-button {
-    color: #353430;
+    color: var(--dark-color);
   }
 
   .title {
-    color: #353430;
+    color: var(--dark-color);
     font-weight: 700;
   }
 
   .header_focus,
   .footer-text {
-    color: #ffc2e6;
-    text-shadow: 4px 4px 0px #ff8dcb;
+    color: var(--light-color);
+    text-shadow: 4px 4px 0px var(--nex-color);
   }
 
   .header_inner,
   .section_inner_title_text_1 {
-    background-color: #ff8dcb;
+    background-color: var(--nex-color);
   }
 
   .section_inner_title_text {
-    color: #000;
+    color: var(--text-color);
+  }
+
+  .footer_rec {
+    border-top: 1px solid var(--dark-color);
+    border-right: 1px solid var(--dark-color);
+  }
+
+  .footer_u {
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
   }
 }
