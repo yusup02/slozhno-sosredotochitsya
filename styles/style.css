@@ -125,7 +125,6 @@
 }
 
 .section_2 {
-  display: flex;
   gap: 20px;
   margin-top: 81px;
   display: grid;
@@ -179,9 +178,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  grid-area: b;
   gap: 0;
+  grid-area: b;
 }
 
 .section_inner_title_1 {
@@ -300,9 +298,6 @@
   top: 20px;
   width: 25px;
   height: 25px;
-  position: absolute;
-  right: 20px;
-  top: 17px;
 }
 
 .footer-text {
@@ -476,7 +471,8 @@
     position: static;
   }
 
-  .header_inner_rec {
+  .header_inner_rec,
+  .footer_rec {
     top: 10px;
     right: 10px;
   }
@@ -591,7 +587,8 @@
     margin-top: 65px;
   }
 
-  .header_u {
+  .header_u,
+  .footer_u {
     bottom: 10px;
     left: 10px;
   }

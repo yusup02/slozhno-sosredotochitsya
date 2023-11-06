@@ -24,6 +24,10 @@
   background-color: var(--border-color);
 }
 
+.theme_dark .section_inner_title_1 {
+  background-color: var(--border-color);
+}
+
 .theme_dark .title {
   color: var(--border-color);
 }
