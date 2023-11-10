@@ -356,8 +356,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(../images/cover-image-dark.png);
-  background-color: var(--background-color);
 }
 
 @media screen and (max-width: 1024px) {
