@@ -13,146 +13,64 @@
 }
 
 .theme_dark .header__theme-menu-button {
-  color: var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .section_inner_title_text {
-  color: var(--inner-color);
+  --inner-color: #f1b2ce;
 }
 
 .theme_dark .section_inner_title_text_1 {
-  background-color: var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .section_inner_title_1 {
-  background-color: var(--border-color);
+  --border-color: #ff0070;
 }
 
-.theme_dark .title {
-  color: var(--border-color);
+.theme_dark .title,
+.theme_dark .title_2 {
+  --border-color: #ff0070;
 }
 
 .theme_dark .header__theme-menu-button:focus-visible {
-  outline: none;
-  border-bottom: 1px solid var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .header__theme-menu-button:hover {
-  outline: 1px solid var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .header__theme-menu-button_active {
-  outline: 1px solid var(--border-color);
-  border: none;
+  --border-color: #ff0070;
 }
 
 .theme_dark .header_inner_rec_title {
-  border-top: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .header_inner_rec_title_o {
-  display: block;
-  background-color: var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .header_focus {
-  color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--border-color);
+  --title-color: #db00ff;
+  --border-color: #ff0070;
 }
 
 .theme_dark .header_inner {
-  background-color: var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .header_u {
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .header_inner_rec_text {
-  display: block;
-  color: var(--border-color);
+  --border-color: #ff0070;
 }
 
 .theme_dark .footer-text {
-  color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--border-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  /* Стили темной темы */
-
-  .page {
-    /* сохраните этот селектор в приведённом виде.
-      Так стили написанные ниже будут иметь больший вес,
-      чем стили в медиазапросе предпочтений пользователя
-    */
-    background-image: url(../images/cover-image-dark.png);
-    background-color: #000028;
-  }
-
-  .header__theme-menu-button {
-    color: var(--border-color);
-  }
-
-  .section_inner_title_text {
-    color: var(--inner-color);
-  }
-
-  .section_inner_title_text_1 {
-    background-color: var(--border-color);
-  }
-
-  .title {
-    color: var(--border-color);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid var(--border-color);
-  }
-
-  .header__theme-menu-button_active {
-    outline: 1px solid var(--border-color);
-    border: none;
-  }
-
-  .header_inner_rec_title {
-    border-top: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-  }
-
-  .header_inner_rec_title_o {
-    display: block;
-    background-color: var(--border-color);
-  }
-
-  .header_focus {
-    color: var(--title-color);
-    text-shadow: 4px 4px 0px var(--border-color);
-  }
-
-  .header_inner {
-    background-color: var(--border-color);
-  }
-
-  .header_u {
-    border-bottom: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
-  }
-
-  .header_inner_rec_text {
-    display: block;
-    color: var(--border-color);
-  }
-
-  .footer-text {
-    color: var(--title-color);
-    text-shadow: 2px 2px 0px var(--border-color);
-  }
+  --title-color: #db00ff;
+  --border-color: #ff0070;
 }

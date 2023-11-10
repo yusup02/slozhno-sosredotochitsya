@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .container {
-  width: 984px;
+  width: 96.09%;
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -26,6 +26,8 @@
   line-height: 82.5%; /* 129.525px */
   width: 759px;
   margin-top: 25%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--border-color);
 }
 
 .header_inner_rec_title {
@@ -34,6 +36,8 @@
   top: 20px;
   width: 25px;
   height: 25px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .header_inner_rec {
@@ -54,6 +58,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 138.889% */
+  display: block;
+  color: var(--border-color);
 }
 
 .header_inner_rec_title_o {
@@ -62,6 +68,8 @@
   border-radius: 180px;
   margin: auto;
   margin-top: 8px;
+  display: block;
+  background-color: var(--border-color);
 }
 
 .header__theme-menu-button {
@@ -74,6 +82,17 @@
   height: 26px;
   padding: 0px 13px;
   border: none;
+  color: var(--border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid  var(--border-color);
+}
+
+.header__theme-menu-button_active {
+  border: none;
+  outline: 1px solid var(--border-color);
 }
 
 .header__theme-menu-list {
@@ -93,6 +112,7 @@
   position: absolute;
   margin-top: 114px;
   right: 20px;
+  background-color: var(--border-color);
 }
 
 .header_text {
@@ -110,11 +130,24 @@
   height: 25px;
   bottom: 20px;
   left: 20px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
   border: none;
+}
+ .header__theme-menu-button_active {
+  border: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* section */
@@ -154,7 +187,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  background-color:  var(--border-color);
+  background-color: var(--border-color);
 }
 
 .section_inner_title_text {
@@ -164,6 +197,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
+  color: var(--inner-color);
 }
 
 .section-inner_2 {
@@ -190,7 +224,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  background-color:  var(--border-color);
+  background-color: var(--border-color);
 }
 
 .section-inner_4 {
@@ -212,7 +246,6 @@
 /* title */
 
 .title {
-  color:  var(--border-color);
   font-family: IBM Plex Mono, Arial, sans serif;
   font-size: 18px;
   font-style: normal;
@@ -220,10 +253,10 @@
   line-height: 23.4px; /* 130% */
   width: 315px;
   grid-area: a;
+  color: var(--border-color);
 }
 
 .title_2 {
-  color:  var(--border-color);
   font-family: IBM Plex Mono, Arial, sans serif;
   font-size: 18px;
   font-style: normal;
@@ -231,6 +264,7 @@
   line-height: 23.4px; /* 130% */
   width: 315px;
   grid-area: a;
+  color: var(--border-color);
 }
 
 /* gallery */
@@ -298,16 +332,19 @@
   top: 20px;
   width: 25px;
   height: 25px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .footer-text {
   padding-top: 319px;
-  text-shadow: 2px 2px 0px  var(--border-color);
   font-family: IBM Plex Mono, Arial, sans serif;
   font-size: 157px;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--border-color);
 }
 
 .footer_u {
@@ -316,6 +353,8 @@
   height: 25px;
   bottom: 20px;
   left: 20px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .page {
@@ -324,6 +363,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url(../images/cover-image-dark.png);
+  background-color: var(--background-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -388,9 +429,6 @@
     font-size: 120px;
   }
 
-  .container {
-    width: 728px;
-  }
 
   .header_inner {
     width: 364px;
@@ -461,10 +499,9 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
   .container {
     margin-top: 40px;
-    width: 355px;
   }
 
   .header {
