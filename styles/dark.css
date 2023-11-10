@@ -9,7 +9,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
-  background-color: var(--background-color);
+  background-color: #000028;
 }
 
 .theme_dark .header__theme-menu-button {
