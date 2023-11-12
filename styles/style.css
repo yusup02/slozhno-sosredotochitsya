@@ -24,10 +24,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
-  width: 759px;
   margin-top: 25%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--border-color);
+  text-shadow: 4px 4px 0px var(--nex-color);
 }
 
 .header_inner_rec_title {
@@ -58,8 +57,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 138.889% */
-  display: block;
   color: var(--border-color);
+  display: var(--disply-block);
 }
 
 .header_inner_rec_title_o {
@@ -68,7 +67,7 @@
   border-radius: 180px;
   margin: auto;
   margin-top: 8px;
-  display: block;
+  display: var(--disply-block);
   background-color: var(--border-color);
 }
 
@@ -112,7 +111,7 @@
   position: absolute;
   margin-top: 114px;
   right: 20px;
-  background-color: var(--border-color);
+  background-color: var(--nex-color);
 }
 
 .header_text {
@@ -180,7 +179,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  background-color: var(--border-color);
+  background-color: var(--nex-color);
 }
 
 .section_inner_title_text {
@@ -217,7 +216,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  background-color: var(--border-color);
+  background-color: var(--nex-color);
 }
 
 .section-inner_4 {
@@ -275,38 +274,29 @@
   gap: 20px;
 }
 
-.gallery_item_1 {
+.gallery-image  {
   height: 100%;
   width: 100%;
-  grid-area: a;
   object-fit: cover;
+}
+
+.gallery_item_1 {
+  grid-area: a;
 }
 
 .gallery_item_2 {
-  height: 100%;
-  width: 100%;
   grid-area: b;
-  object-fit: cover;
 }
 
 .gallery_item_3 {
-  height: 100%;
-  width: 100%;
   grid-area: d;
-  object-fit: cover;
 }
 
 .gallery_item_4 {
   grid-area: c;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .gallery_item_5 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   grid-area: e;
 }
 
@@ -337,7 +327,7 @@
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
   color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--border-color);
+  text-shadow: 2px 2px 0px var(--nex-color);
 }
 
 .footer_u {
